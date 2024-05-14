@@ -27,7 +27,7 @@ const {Sticker ,StickerTypes}= require('wa-sticker-formatter');
 france({
   nomCom: "ranime",
   categorie: "Fun",
-  reaction: "📺"
+  reaction: "🔰"
 },
 async (origineMessage, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -46,7 +46,7 @@ async (origineMessage, zk, commandeOptions) => {
 
     //const texttraduit = await traduire(synopsis,{ to: 'fr' })
 
-    const message = `📺 Titre: ${title}\n🎬 Épisodes: ${episodes}\n📡 Statut: ${status}\n📝 Synopsis: ${synopsis}\n🔗 URL: ${data.url}`;
+    const message = `🔰 TITLE: ${title}\n🔰 EPISODE: ${episodes}\n🔰 STATUS: ${status}\n🔰 SYNOPSIS: ${synopsis}\n🔰 LINK: ${data.url}`;
     
     // Envoyer l'image et les informations
     zk.sendMessage(origineMessage, { image: { url: imageUrl }, caption: message }, { quoted: ms });
@@ -63,19 +63,19 @@ france({
   const { arg, repondre } = commandeOptions;
   
   if (!arg[0] || arg === "") {
-    repondre("Give me a query.\n*Example: .google What is a bot.*");
+    repondre("Apko google se kisi chiz ki information chahye...?\n*Ese likho : .google GOLD MD github Repo Link*");
     return;
   }
 
   const google = require('google-it');
   try {
     const results = await google({ query: arg.join(" ") });
-    let msg = `Google search for : ${arg}\n\n`;
+    let msg = `GOLD MD GOOGLE SEARCHED FOR : ${arg}\n\n`;
 
     for (let result of results) {
-      msg += `➣ Title : ${result.title}\n`;
-      msg += `➣ Description : ${result.snippet}\n`;
-      msg += `➣ Link : ${result.link}\n\n────────────────────────\n\n`;
+      msg += `🔰 TITLE : ${result.title}\n`;
+      msg += `🔰 DESCRYPTION : ${result.snippet}\n`;
+      msg += `🔰 LINK : ${result.link}\n\n────────────────────────\n\n`;
     }
     
    // const trdmsg = await traduire(msg,{to : 'fr'})
@@ -92,7 +92,7 @@ france({
   const { arg, repondre , ms } = commandeOptions;
 
   if (!arg[0] || arg === "") {
-    repondre("give the name of a series or film.");
+    repondre("Kisi bhi movie ka name likho");
     return;
   }
 
