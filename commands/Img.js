@@ -19,13 +19,13 @@ var gis = require('g-i-s');
 france({
   nomCom: "img",
   categorie: "Search",
-  reaction: "📷"
+  reaction: "🔰"
 },
 async (dest, zk, commandeOptions) => {
   const { repondre, ms, arg } = commandeOptions;
 
   if (!arg[0]) {
-    repondre('which image ? !');
+    repondre('Apko kis chiz ki pic chahye..?');
     return;
   }
 
