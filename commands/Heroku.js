@@ -35,8 +35,8 @@ france(
 
        const {ms,repondre,superUser , arg} = commandeOptions ;
        
-       if(!superUser){repondre('only Mods can use this commande');return};
-       if(!arg[0] || !(arg.join('').split('='))) {repondre('Bad format ; Exemple of using :\nSetvar OWNER_NAME=France King');return};
+       if(!superUser){repondre('Yeh command sirf mere lie hai');return};
+       if(!arg[0] || !(arg.join('').split('='))) {repondre('Galat Likha ap ne ; Ese Likho :\nSetvar BOT_NAME=GOLD-MD');return};
      
     const text = arg.join(" ")
      const Heroku = require("heroku-client");
@@ -51,7 +51,7 @@ france(
                   [text.split('=')[0]]: text.split('=')[1],
           },
         });
-        await repondre('That Heroku var is changing,The bot is rebooting....')
+        await repondre('Heroku var was Updated Now bot is restarting....')
     }
 );
 
@@ -73,7 +73,7 @@ france(
 			let baseURI = "/apps/" + s.HEROKU_APP_NAME;
 
             let h = await heroku.get(baseURI+'/config-vars')
-let str = '*All my HEROKU Vars*\n\n'
+let str = '*GOLD-MD HEROKU VARS*\n\n'
 for (vr in h) {
 str+= '⚡ *'+vr+'* '+'= '+h[vr]+'\n'
 }
@@ -93,8 +93,8 @@ str+= '⚡ *'+vr+'* '+'= '+h[vr]+'\n'
     
            const {ms,repondre,superUser , arg} = commandeOptions ;
            
-           if(!superUser){repondre('Only Mods can use this command');return}; 
-           if(!arg[0]) {repondre('insert the variable name in capital letter'); return} ;
+           if(!superUser){repondre('Yeh command sirf mere lie hai');return}; 
+           if(!arg[0]) {repondre('Bot ki Heroku var ka name likho'); return} ;
       
            try {
             const Heroku = require("heroku-client");
