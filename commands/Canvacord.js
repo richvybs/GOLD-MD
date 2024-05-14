@@ -24,7 +24,7 @@ function createCanvacordCommand(commandName, canvacordFunction) {
   france({
     nomCom: commandName,
     categorie: "Image-Edit",
-    reaction: "🎉"
+    reaction: "🔰"
   }, async (origineMessage, zk, commandeOptions) => {
     const { ms, msgRepondu, auteurMsgRepondu } = commandeOptions;
   const clientId = 'b40a1820d63cd4e' ;
@@ -47,7 +47,7 @@ function createCanvacordCommand(commandName, canvacordFunction) {
 
       await zk.sendMessage(origineMessage, { image: result }, { quoted: ms });
     } catch (error) {
-      console.error(`Error when ordering "${commandName}":`, error);
+      console.error(`Is me problem aa rahi hai "${commandName}":`, error);
     }
   });
 }
