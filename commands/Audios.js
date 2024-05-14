@@ -2,14 +2,14 @@
 
 /** 
 
-🇫‌🇱‌🇦‌🇸‌🇭‌-🇲‌🇩‌ 
+              • GOLD MD WHATSAPP BOT •
 
   𝗖𝗼𝗽𝘆𝗿𝗶𝗴𝗵𝘁 (𝗖) 2024.
  𝗟𝗶𝗰𝗲𝗻𝘀𝗲𝗱 𝘂𝗻𝗱𝗲𝗿 𝘁𝗵𝗲  𝗠𝗜𝗧 𝗟𝗶𝗰𝗲𝗻𝘀𝗲;
  𝗬𝗼𝘂 𝗺𝗮𝘆 𝗻𝗼𝘁 𝘂𝘀𝗲 𝘁𝗵𝗶𝘀 𝗳𝗶𝗹𝗲 𝗲𝘅𝗰𝗲𝗽𝘁 𝗶𝗻 𝗰𝗼𝗺𝗽𝗹𝗶𝗮𝗻𝗰𝗲 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗟𝗶𝗰𝗲𝗻𝘀𝗲.
  𝗜𝘁 𝗶𝘀 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗶𝗻 𝘁𝗵𝗲 𝗵𝗼𝗽𝗲 𝘁𝗵𝗮𝘁 𝗶𝘁 𝗺𝗮𝘆 𝗯𝗲 𝘂𝘀𝗲𝗳𝘂𝗹.
- * @𝗽𝗿𝗼𝗷𝗲𝗰𝘁_𝗻𝗮𝗺𝗲 : 𝗙𝗹𝗮𝘀𝗵 𝗠𝗗, 𝗮 𝘀𝗶𝗺𝗽𝗹𝗲 𝗮𝗻𝗱 𝗲𝗮𝘀𝘆 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝘂𝘀𝗲𝗿 𝗯𝗼𝘁 
- * @𝗼𝘄𝗻𝗲𝗿: 𝗙𝗿𝗮𝗻𝗰𝗲 𝗞𝗶𝗻𝗴 
+ * @𝗽𝗿𝗼𝗷𝗲𝗰𝘁_𝗻𝗮𝗺𝗲 : GOLD 𝗠𝗗, 𝗮 𝘀𝗶𝗺𝗽𝗹𝗲 𝗮𝗻𝗱 𝗲𝗮𝘀𝘆 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝘂𝘀𝗲𝗿 𝗯𝗼𝘁 
+ * @𝗼𝘄𝗻𝗲𝗿: UMAR 
  
  **/
 
@@ -44,7 +44,7 @@ france (
                 try {
                   exec(`ffmpeg -i ${media} ${set} ${ran}`, (err, stderr, stdout) => {
                     fs.unlinkSync(media);
-                    if (err) return repondre("error during the procedure " + err );
+                    if (err) return repondre("Is me kuch problem aa rahi hai " + err );
                    
                     let buff1 = fs.readFileSync(ran);
                    
@@ -61,11 +61,11 @@ france (
                 }
 
             } else {
-                repondre('the command only works with audio messages')
+                repondre('yeh command sirf audios ke lie hai')
             }
 
         } else {
-            repondre('Please mention an audio')
+            repondre('Kisi bhi audio ko mention karo')
         }
     }
 );
@@ -89,7 +89,7 @@ france (
                 try {
                   exec(`ffmpeg -i ${media2} ${set2} ${ran2}`, (err, stderr, stdout) => {
                     fs.unlinkSync(media2);
-                    if (err) return repondre("error during the procedure " + err );
+                    if (err) return repondre("is me kuch problem aa rahi hai " + err );
                    
                     let buff2 = fs.readFileSync(ran2);
                    
@@ -106,11 +106,11 @@ france (
                 }
 
             } else {
-                repondre('the command only works with audio messages')
+                repondre('yeh command sirf audios ke lie hai')
             }
 
         } else {
-            repondre('Please mention an audio')
+            repondre('Kisi bhi audio ko mention karo')
         }
     }
 );
@@ -132,7 +132,7 @@ france(
           try {
             exec(`ffmpeg -i ${media3} ${set3} ${ran3}`, (err, stderr, stdout) => {
               fs.unlinkSync(media3);
-              if (err) return repondre("error during the procedure" + err);
+              if (err) return repondre("Is me kuch problem aa rahi hai" + err);
   
               let buff3 = fs.readFileSync(ran3);
   
@@ -143,10 +143,10 @@ france(
             repondre("Error : " + e);
           }
         } else {
-          repondre("The command only works with audio messages");
+          repondre("yeh command sirf audios ke lie hai");
         }
       } else {
-        repondre("Please mention an audio");
+        repondre("Kisi bhi audio ko mention karo");
       }
     }
   );
@@ -168,7 +168,7 @@ france(
           try {
             exec(`ffmpeg -i ${media5} ${set5} ${ran5}`, (err, stderr, stdout) => {
               fs.unlinkSync(media5);
-              if (err) return repondre("error during the procedure" + err);
+              if (err) return repondre("Is me kuch problem aa rahi hai" + err);
   
               let buff5 = fs.readFileSync(ran5);
   
@@ -179,10 +179,10 @@ france(
             repondre("Error : " + e);
           }
         } else {
-          repondre("The command only works with audio messages");
+          repondre("yeh command sirf audios ke lie hai");
         }
       } else {
-        repondre("Please mention an audio");
+        repondre("Kisi bhi audio ko mention karo");
       }
     }
   );
@@ -205,7 +205,7 @@ france(
           try {
             exec(`ffmpeg -i ${mediaSmooth} ${setSmooth} ${ranSmooth}`, (err, stderr, stdout) => {
               fs.unlinkSync(mediaSmooth);
-              if (err) return repondre("error during the procedure" + err);
+              if (err) return repondre("Is me kuch problem aa rahi hai" + err);
   
               let buff6 = fs.readFileSync(ranSmooth);
   
@@ -216,10 +216,10 @@ france(
             repondre("Error : " + e);
           }
         } else {
-          repondre("The command only works with audio messages");
+          repondre("yeh command sirf audios ke lie hai");
         }
       } else {
-        repondre("Please mention an audio");
+        repondre("Kisi bhi audio ko mention karo");
       }
     }
   );
@@ -242,7 +242,7 @@ france(
           try {
             exec(`ffmpeg -i ${mediaTempo} ${setTempo} ${ranTempo}`, (err, stderr, stdout) => {
               fs.unlinkSync(mediaTempo);
-              if (err) return repondre("error during the procedure " + err);
+              if (err) return repondre("Is me kuch problem aa rahi hai" + err);
   
               let buff7 = fs.readFileSync(ranTempo);
   
@@ -253,10 +253,10 @@ france(
             repondre("Error : " + e);
           }
         } else {
-          repondre("The command only works with audio messages");
+          repondre("yeh command sirf audios ke lie hai");
         }
       } else {
-        repondre("Please mention an audio");
+        repondre("Kisi bhi audio ko mention karo");
       }
     }
   );
@@ -279,7 +279,7 @@ france(
           try {
             exec(`ffmpeg -i ${mediaNightcore} ${setNightcore} ${ranNightcore}`, (err, stderr, stdout) => {
               fs.unlinkSync(mediaNightcore);
-              if (err) return repondre("error during the procedure " + err);
+              if (err) return repondre("Is me kuch problem aa rahi hai " + err);
   
               let buff8 = fs.readFileSync(ranNightcore);
   
@@ -290,10 +290,10 @@ france(
             repondre("Erreur : " + e);
           }
         } else {
-          repondre("The command only works with audio messages");
+          repondre("yeh command sirf audios ke lie hai");
         }
       } else {
-        repondre("Please mention an audio");
+        repondre("Kisi bhi audio ko mention karo");
       }
     }
   );
