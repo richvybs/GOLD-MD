@@ -8,7 +8,7 @@ france({nomCom:"vv",categorie:"General",reaction:"🤩"},async(dest,zk,commandeO
 const {ms,msgRepondu,repondre}=commandeOptions;
 
 
-if(!msgRepondu){return repondre("*Mentionne a view once media* .");}
+if(!msgRepondu){return repondre("_Kisi bhi private pic ya video ko mention kare jo sirf 1 bar open hoti hai");}
 
 
 if(msgRepondu.viewOnceMessageV2)
@@ -30,7 +30,7 @@ await zk.sendMessage(dest,{video:{url:video},caption:texte},{quoted:ms})
 }
 }else
 {
-   return repondre("this message is not on view once .")
+   return repondre("_Ap ne jis msg ko mention kia hai yeh private view once msg nahii hai")
 }
 
 
