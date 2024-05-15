@@ -28,12 +28,12 @@ const yts1 = require("youtube-yts");
 france({
   nomCom: "play",
   categorie: "Search",
-  reaction: "💿"
+  reaction: "🔰"
 }, async (origineMessage, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
      
   if (!arg[0]) {
-    repondre("wich song do you want.");
+    repondre("Audio song download karne ke lie Song ka name likho");
     return;
   }
 
@@ -47,14 +47,11 @@ france({
           
        let infoMess = {
           image: {url : videos[0]. thumbnail},
-         caption : `\n*song name :* _${videos[0].title}_
+         caption : `\n*🔰NAME :* _${videos[0].title}_
 
-*Time :* _${videos[0].timestamp}_
-
-*Url :* _${videos[0].url}_
-
-
-_*DOWNLOADING...*_\n\n`
+*🔰TIME :* _${videos[0].timestamp}_
+*🔰LINK :* _${videos[0].url}_
+*🔰DOWNLOADING...*\n\n`
        }
 
       
@@ -102,12 +99,12 @@ _*DOWNLOADING...*_\n\n`
 france({
   nomCom: "video",
   categorie: "Search",
-  reaction: "🎥"
+  reaction: "🔰"
 }, async (origineMessage, zk, commandeOptions) => {
   const { arg, ms, repondre } = commandeOptions;
 
   if (!arg[0]) {
-    repondre("insert video name");
+    repondre("Video download karne ke lie Video ka name likho");
     return;
   }
 
@@ -121,10 +118,10 @@ france({
 
       let InfoMess = {
         image: { url: videos[0].thumbnail },
-        caption: `*Video name :* _${Element.title}_
-*Time :* _${Element.timestamp}_
-*Url :* _${Element.url}_
-_*DOWNLOADING...*_\n\n`
+        caption: `*🔰NAME :* _${Element.title}_
+*🔰TIME :* _${Element.timestamp}_
+*🔰LINK :* _${Element.url}_
+*🔰DOWNLOADING...*\n\n`
       };
 
       zk.sendMessage(origineMessage, InfoMess, { quoted: ms });
@@ -145,7 +142,7 @@ _*DOWNLOADING...*_\n\n`
 
       fileStream.on('finish', () => {
         // Envoi du fichier vidéo en utilisant l'URL du fichier local
-        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: "*FLASH-MD*", gifPlayback: false }, { quoted: ms });
+        zk.sendMessage(origineMessage, { video: { url :"./video.mp4"} , caption: "*🔰 BY || GOLD || MD 🔰*", gifPlayback: false }, { quoted: ms });
       });
 
       fileStream.on('error', (error) => {
@@ -153,7 +150,7 @@ _*DOWNLOADING...*_\n\n`
         repondre('Une erreur est survenue lors de l\'écriture du fichier vidéo.');
       });
     } else {
-      repondre('No video found');
+      repondre('Ap ne jo video search ki hai wo nahi mili mujhe Sorry');
     }
   } catch (error) {
     console.error('Erreur lors de la recherche ou du téléchargement de la vidéo :', error);
