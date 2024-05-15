@@ -42,7 +42,7 @@ france({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk,
     for (let i = 0; i < 10; i++) {
       captions += `----------------\nTitle: ${resultat[i].title}\nTime : ${resultat[i].timestamp}\nUrl: ${resultat[i].url}\n`;
     }
-    captions += "\n======\n*powered by FLASH-MD*";
+    captions += "\n======\n*🔰 BY || GOLD || MD 🔰*";
 
     // repondre(captions)
     zk.sendMessage(dest, { image: { url: resultat[0].thumbnail }, caption: captions }, { quoted: ms });
@@ -54,12 +54,12 @@ france({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk,
 france({
   nomCom: "ytmp4",
   categorie: "Download",
-  reaction: "🎥"
+  reaction: "🔰"
 }, async (origineMessage, zk, commandeOptions) => {
   const { arg, ms, repondre } = commandeOptions;
 
   if (!arg[0]) {
-    repondre("insert a youtube link");
+    repondre("Mujhe youtube video ka link do");
     return;
   }
 
@@ -98,7 +98,7 @@ _*En cours de téléchargement...*_\n\n`
 
     fileStream.on('finish', () => {
       // Envoi du fichier vidéo en utilisant l'URL du fichier local
-      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "Powered by *FLASH-MD*", gifPlayback: false }, { quoted: ms });
+      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "*🔰 BY || GOLD || MD 🔰*", gifPlayback: false }, { quoted: ms });
 
     });
 
@@ -116,12 +116,12 @@ _*En cours de téléchargement...*_\n\n`
 france({
   nomCom: "ytmp3",
   categorie: "Download",
-  reaction: "💿"
+  reaction: "🔰"
 }, async (origineMessage, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
 
   if (!arg[0]) {
-    repondre("Insert a youtube link");
+    repondre("Mujhe youtube video ka link do");
     return;
   }
 
