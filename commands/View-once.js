@@ -8,7 +8,7 @@ france({nomCom:"vv",categorie:"General",reaction:"🔰"},async(dest,zk,commandeO
 const {ms,msgRepondu,repondre}=commandeOptions;
 
 
-if(!msgRepondu){return repondre("_Kisi bhi private pic ya video ko mention kare jo sirf 1 bar open hoti hai");}
+if(!msgRepondu){return repondre("_Kisi bhi view once pic ya video jo sirf 1 bar open hoti hai usko mention ker ke likho ${prefix}vv_");}
 
 
 if(msgRepondu.viewOnceMessageV2)
