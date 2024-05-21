@@ -8,7 +8,7 @@
 
 ***
 
-# GET • [SESSION ID](https://cleanuri.com/P2z4vV) • FOR GOLD-MD
+# GET • [SESSION ID](https://bot-by-umar-d2b1b3360401.herokuapp.com) • FOR GOLD-MD
 
 ***
 
