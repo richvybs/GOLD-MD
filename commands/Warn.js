@@ -33,14 +33,14 @@ france(
 if(!verifGroupe ) {repondre('this is a group commands') ; return};
 
 if(verifAdmin || superUser) {
-   if(!msgRepondu){repondre('reply a message of user to warn'); return};
+   if(!msgRepondu){repondre('Ap kis Bande ko warnig dena chahte hai usko mention karo'); return};
    
    if (!arg || !arg[0] || arg.join('') === '') {
     await ajouterUtilisateurAvecWarnCount(auteurMsgRepondu)
    let warn = await getWarnCountByJID(auteurMsgRepondu)
    let warnlimit = s.WARN_COUNT
    
-   if( warn >= warnlimit ) { await repondre('this user reach limit of warning , so i kick him/her');
+   if( warn >= warnlimit ) { await repondre('Is bande ki warnigs khatam hui , to mene remove ker dya');
                 zk.groupParticipantsUpdate(dest, [auteurMsgRepondu], "remove")
  } else { 
 
@@ -49,10 +49,10 @@ if(verifAdmin || superUser) {
    }
 } else if ( arg[0] === 'reset') { await resetWarnCountByJID(auteurMsgRepondu) 
 
-    repondre("Warn count is reset for this user")} else ( repondre('reply to a user by typing  .warn ou .warn reset'))
+    repondre("Is Bande ki warnigs reset ho gayi hai")} else ( repondre('reply to a user by typing  .warn ou .warn reset'))
    
 }  else {
-    repondre('you are not admin')
+    repondre('Yeh cmnd sirf group admins use kar sakte hai ap admin nahi ho')
 }
  
    });
