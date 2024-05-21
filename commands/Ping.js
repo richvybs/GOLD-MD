@@ -38,8 +38,8 @@ france({ nomCom: 'ping',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
     const { start} = new Date().getTime()
-    return repondre('*🔰GOLD-MD🔰*\n ```' + 786 + '``` *2x•SPEED*') 
+    return repondre('*🔰GOLD-MD🔰*\n ```' + 786 + '``` *|2x•SPEED|*') 
     const { end } = new Date().getTime()
-    await zok.sendMessage('*🔰GOLD-MD🔰*\n ```' + (end - start) + '``` *2x•SPEED*')
+    await zok.sendMessage('*🔰GOLD-MD🔰*\n ```' + (end - start) + '``` *|2x•SPEED|*')
   }
 )
