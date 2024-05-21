@@ -27,7 +27,7 @@ const {france}=require("../framework/france")
 
 
 
-france({nomCom:"reboot",categorie:"Mods",reaction:"👨🏿‍💼"},async(dest,z,com)=>{
+france({nomCom:"reboot",categorie:"Mods",reaction:"🔰"},async(dest,z,com)=>{
 
 
   
@@ -35,12 +35,12 @@ const{repondre,ms,dev,superUser}=com;
 
   if(!superUser)
   {
-    return repondre("This command is for owner only");
+    return repondre("Yeh cmnd sirf mere lie hai");
   }
 
   const {exec}=require("child_process")
 
-    repondre("*Rebooting...*");
+    repondre("*GOLD-MD IS RE-BOTING...*");
 
   exec("pm2 restart all");
   
