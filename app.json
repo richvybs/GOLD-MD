@@ -1,9 +1,9 @@
 {
-  "name":"FLASH-MD",
-  "description":"An easy and simple WhatsApp bot developed by France King",
+  "name":"GOLD-MD",
+  "description":"WHATSAPP BOT BY UMAR",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://telegra.ph/file/dfccbf12397757c321ac4.jpg",
-  "repository":"https://github.com/franceking1/Flash-Md",
+  "logo":"https://i.postimg.cc/1XQq5DzP/pictures-white949544-GOjsnnsnznznzbzbbzbz7777-GOLDLD-PIC.png",
+  "repository":"https://github.com/D4X-UMAR/GOLD-MD",
   "succes_url":"/",
   "stack":"container",
      "env":{
@@ -17,55 +17,55 @@
     {
       "description":"Put yes if you want the bot to autoread people's messages or else put no", 
       "value":"no", 
-      "required":false 
+      "required":true 
     }, 
     "AUTO_READ_STATUS":
     {
       "description":"Your contact status will be read automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"yes",
-      "required":false
+      "required":true
     }, "AUTO_DOWNLOAD_STATUS":
     {
       "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
-      "value":"yes",
-      "required":false
+      "value":"no",
+      "required":true
     }
     ,
      "PM_PERMIT" :
      {
       "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
       "value":"no",
-      "required":false
+      "required":true
     }
     ,
     "BOT_NAME" : {
 
       "description":"put A name for your bot",
-      "value":"FLASH-MD",
-      "required":false
+      "value":"GOLD-MD",
+      "required":true
 
     } ,
      "BOT_MENU_LINKS" : {
 
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://telegra.ph/file/dfccbf12397757c321ac4.jpg",
-      "required":false
+      "value":"https://i.postimg.cc/1XQq5DzP/pictures-white949544-GOjsnnsnznznzbzbbzbz7777-GOLDLD-PIC.png",
+      "required":true
 
      },
     "PUBLIC_MODE":
     {
       "description":"type yes to put your bot on public mode or no to put it on private mod",
-      "value":"no",
-      "required":false
+      "value":"yes",
+      "required":true
     }
         ,
     "HEROKU_API_KEY": {
     "description": "insert your heroku api-key (this is optionnal)",
-     "required" :false
+     "required":true
     },
    "HEROKU_APP_NAME": {
     "description": "insert your heroku APP NAME (this is optionnal)",
-     "required" :false
+     "required" :true
     }  
           ,
     "SESSION_ID":
@@ -79,38 +79,38 @@
     {
 
     "desc": "Your Name",
-    "required": false,
-    "value": "France King"
+    "required": true,
+    "value": "UMAR"
   },
     "OWNER_NUMBER":
   {
 
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
-    "required":false,
-    "value": "254751284190"
+    "required":true,
+    "value": "923158930864"
   },
     "WARN_COUNT":
   {
     "desc": "this is the limit of warn for warning commandes",
-    "required": false,
-    "value": "3"
+    "required": true,
+    "value": "2"
   },
     "CHAT_BOT":
     {
       "desc": "Put yes to allow the bot to chat with people who text you or put no if you don't want the bot to chat with people",
-      "required": false, 
+      "required": true, 
        "value": "no" 
     }, 
   "STARTING_BOT_MESSAGE":
   {
     "description": "if you don't want startting-bot-message put no else put yes",
     "required": true,
-    "value": "yes"
+    "value": "no"
   },
   "PRESENCE":{
     "description":"Put online to indicate that you are ever online even if you are not. Put typing to indicate that you are currently typing a message. Put recording to indicate that you are currently recording an audio. Or leave the field blank to indicate your real state.",
     "value":"",
-    "required": false
+    "required": true
   }  
   },
 
